@@ -5,8 +5,6 @@ import fi.helsinki.cs.tmc.core.domain.bandicoot.Crash;
 
 import fi.helsinki.cs.tmc.core.domain.bandicoot.Diagnostics;
 
-import org.apache.commons.lang.math.NumberUtils;
-
 import java.net.URI;
 import java.util.concurrent.Callable;
 

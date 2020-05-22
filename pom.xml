@@ -20,6 +20,14 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>vektah-openapi</id>
+            <name>3rd party openapi repository</name>
+            <url>https://github.com/ivospijkerman/maven-intellij-openapi/raw/master/</url>
+        </repository>
+    </repositories>
+
     <build>
         <extensions>
             <extension>
@@ -154,21 +162,6 @@
         </snapshotRepository>
     </distributionManagement>
 
-    <repositories>
-        <repository>
-            <id>tmc</id>
-            <name>TMC repo</name>
-            <url>http://maven.testmycode.net/nexus/content/groups/public</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </snapshots>
-        </repository>
-    </repositories>
-
     <dependencies>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -230,17 +223,17 @@
             <version>2.9</version>
         </dependency> -->
         <dependency>
+            <scope>provided</scope>
             <groupId>fi.helsinki.cs.tmc</groupId>
             <artifactId>tmc-langs-abstraction</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </dependency>
 
         <dependency>
             <groupId>fi.helsinki.cs.tmc</groupId>
             <artifactId>tmc-langs-util</artifactId>
-            <version>0.7.16-SNAPSHOT</version>
+            <version>0.7.17</version>
         </dependency>
-
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
@@ -404,7 +397,7 @@
         <dependency>
             <groupId>fi.helsinki.cs.tmc</groupId>
             <artifactId>tmc-junit-runner</artifactId>
-            <version>0.2.5</version>
+            <version>0.2.9</version>
         </dependency>
         <dependency>
             <groupId>org.apache.oltu.oauth2</groupId>
